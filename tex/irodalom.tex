@@ -90,26 +90,25 @@ E = E_\text{0} - 0,059 [Cl-]
 \end{equation}
 
 A fenti egyenletekből következik, hogy az ezüst-klorid elektród potenciálját az oldat anion koncentrációjának változása fogja meghatározni, ugyanis az oldatban lévő anion koncentráció határozza meg az ezüst-ion koncentriációt.
-
 \end{enumerate}
-
-
-    
     
 
 
+\section{A Belouszov-Zsabotyinszkij oszcillálló reakció}
+Dolgozatom elsősorban a PEKM technika új alkalmazási területével foglalkozik, a Belouszov-Zsabotyinszkij reakciót pedig csak modellrendszerként használtam munkám során. Témavezetőmmel olyan rendszert kerestünk, melyben jelentős ionaktivitás grádiens léphet fel homogén folyadékfázisú rendszerben. Megfelelő példának tűnt a BZ reakció, melynek keveretlen lefolyása esetén térbeli mintázatok alakulnak ki. A térbeli mintázatok mentén változik többek között a bromid-ion aktivitás és a redox-potenciál, két olyan paraméter, melyek kiválóan mérhetők potenciometriás PEKM technikával. Ezek közül a redox-potenciál térképezését választottam. A továbbiakban áttekintem az oszcilláló jelenségeket, bemutatom a BZ reakció főbb irodalmát, különös tekintettel a vizsgálati módszerekre.
 
-\section{Oszcilláló reakciók}
+\subsection{Oszcilláló jelenségek}
 Oszcilláló jelenségeket a hétköznapi életben is megfigyelhetünk, ha szabályos időközönként ugyanaz az esemény megismétlődik, akkor időben periodikus eseményről, azaz oszcillációról beszélünk. Ezek az események számos tuddományban megfigyelhetőek. Legegyszerűbb példa lehet a nap-éj periodikus váltakozása, megemlíthetjük még az évszakok váltakozását, mint csillagászati példa.
+
 Az emberi szervezetben is megfigyelhetőek oszcilláló viselkedések, például a szív jobb pitvarának falában lévő szinuszcsomókban elhelyezkedő sejtek által küldött periodikus jelek hatására  szívünk átlagosan 72-szer húzódik össze percenként. Matematikai oszcilláló jelenség a szinusz és koszinusz periodikus függvények. Az állatvilágban (biológia) is megfigyelhetünk ilyen jelenségeket a zebrák és oroszlánok populációjának változása, amennyiben sok zebra van és kevés oroszlán az oroszlánok száma növekedni fog, míg a zebráké csökken és ez a populációs arány változik periodikusan. Fizika tudomány területén megemlíthetjük a harmonikus rezgőmozgásokat, mechanikai ingát,  az elektronikai “flip-flop” jelenséget. Ezekre rávilágítva belátjuk, hogy az univerzum számos oszcilláló jelenséget produkál, sőt Lawrence Mead és Harry Ringermacher elmélete \cite{ringermacher2017strong}  szerint maga az univerzum is oszcillál tágulása a múltban lelassult, majd újra felgyorsult és ez a folyamat felelős az univerzum egyes folyamataiért. Ez az oszcilláló jelenség feltételezéseik szerint már 7 periódust oszcillált az évmilliárdok során.
-Kémiai oszcilláló rendszerek ismerete a XVII. század végére vezethető vissza. 
-A kémiai jelenségeknél megkülönböztetünk homogén és heterogén rendszereket. A heterogén rendszerek felfedezésével kezdődött a kémiai reakciók kronológiája, mikor Robert Boyle \cite{harvey1957history} felfedezte az elemek égetésekor történő tömegnövekedés vizsgálata során a foszfor oxidációjakor fellépő halvány luminesszencia felvillanásokat figyelt meg, ami periodicitást mutatott. Őt követte  Fechner 1828-ban felfedezett áramoszcillációja [8], amikor gyengén megsavanyított ezüst-nitrát oldatba merített ezüst- és vaselektródok között áram- és feszültségoszcillációt észlelt. 1896-ban a német kémikus Liesegang periodikus csapadékképződést figyelt meg [9], híg kálium-bikromátból és zselatinból készült gél felszínére tömény ezüst-nitrátot cseppentett, ahol néhány óra elteltével a gél és az ezüst-nitrát határfelületénél csapadéksáv keletkezik, az idő előrehaladtával kialakulnak az úgynevezett Liesegang-gyűrűk. 1899-ben Ostwald [10] periodikus H2 fejlődést tapasztalt króm sósavban való oldásakor.
+
+Kémiai oszcilláló rendszerek ismerete a XVII. század végére vezethető vissza. A kémiai jelenségeknél megkülönböztetünk homogén és heterogén rendszereket. A heterogén rendszerek felfedezésével kezdődött a kémiai reakciók kronológiája, mikor Robert Boyle \cite{harvey1957history} felfedezte az elemek égetésekor történő tömegnövekedés vizsgálata során a foszfor oxidációjakor fellépő halvány luminesszencia felvillanásokat figyelt meg, ami periodicitást mutatott. Őt követte  Fechner 1828-ban felfedezett áramoszcillációja [8], amikor gyengén megsavanyított ezüst-nitrát oldatba merített ezüst- és vaselektródok között áram- és feszültségoszcillációt észlelt. 1896-ban a német kémikus Liesegang periodikus csapadékképződést figyelt meg [9], híg kálium-bikromátból és zselatinból készült gél felszínére tömény ezüst-nitrátot cseppentett, ahol néhány óra elteltével a gél és az ezüst-nitrát határfelületénél csapadéksáv keletkezik, az idő előrehaladtával kialakulnak az úgynevezett Liesegang-gyűrűk. 1899-ben Ostwald [10] periodikus H2 fejlődést tapasztalt króm sósavban való oldásakor.
+
 1943-ban Frank-Kamenyeckij termokémiai oszcillációkat tanulmányozott [11], ezek legismertebb példája a hideglángok jelensége, ami egy alkán alacsony hőmérsékleten történő tökéletlen égésekor szabályos időközönként megjelenő halványkék láng jelenik meg a reakciótérben.
 Heterogén oszcilláló jelenség jól megfigyelhető a „higanyszív” nevezetű reakció esetében is, amely során kálium-bromátos híg kénsavoldatban lévő higany csepphez egy vasszöget érintve a higany pulzáló mozgást végez. Ezt a jelenséget a higany- és a vas felületén lejátszódó bonyolult elektrokémiai jelenséggel magyarázhatjuk, ahol az oldatban lévő higany pozitív a vasé negatív töltésű. A tű érintésére a töltés közömbösítődik, ezért a higanycsepp összerándul, majd ezt az összerándulást periodikusan folytatja.
-      A homogén reakció vizsgálatával kapcsoltban az első felfedezést Bray tette 1921-ben [12], jodátion katalizált hidrogén-peroxid bomlásakor megfigyelhető oszcillációt fedezte fel.
-A leghíresebb homogén kémiai oszcilláló reakciót Belousov írta le 1955-ben [13], ami citromsav kénsavas közegben és Ce(IV)/Ce(III) ionokkal katalizált bromátos oxidációja során az oldat színe a katalizátor oxidált (sárga szín)és redukált állapotára (színtelen) jellemző színek közötti oszcillációját figyelte meg.
- A reakciót Zhabotinsky továbbfejlesztette és adta meg a Belousov reakció vázmechanizmusát.
-A Belousov Zhabotinsky [14] reakció:
+
+A homogén reakció vizsgálatával kapcsolatban az első felfedezést Bray tette 1921-ben [12], jodátion katalizált hidrogén-peroxid bomlásakor megfigyelhető oszcillációt fedezte fel. A leghíresebb homogén kémiai oszcilláló reakciót Belousov írta le 1955-ben [13], ami citromsav kénsavas közegben és Ce(IV)/Ce(III) ionokkal katalizált bromátos oxidációja során az oldat színe a katalizátor oxidált (sárga szín)és redukált állapotára (színtelen) jellemző színek közötti oszcillációját figyelte meg.
+ A reakciót Zhabotinsky továbbfejlesztette és adta meg a Belousov reakció vázmechanizmusát. A Belousov Zhabotinsky [14] reakció:
 Az eredeti reakcióban Belousov által használt citromsavat, mint szerves szubsztrátot malonsavval helyettesítette Zhabotinsky, a Ce(IV) helyett ferroin indikátort vagy Mn(II)-t alkalmazott katalizátorként, így a reakció általános összetétele: Bromát-Szubsztrát-Katalizátor-Sav.
 Minden olyan reakciót, ahol valamilyen szerves szubsztrátumot oxidálunk savas bromáttal átmeneti-fémionok jelenlétében Belousov-Zhabotinsky reakciónak nevezünk. Erre a reakcióra Richard J. Field, Kőrös Endre, Richard M. Noyes kidolgoztak egy modellt [2], amit a nevük után Field-Kőrös-Noyes (FKN) modellnek neveznek. A mintegy 80 lépéses mechanizmus bruttó reakciói:
 Általános alakban:
@@ -129,19 +128,8 @@ X = HBrO$_2$
 Y = Br$^-$
 Z = Ce$^{4+}$ szerepét tölti be.
 
-A teljes mechanizmus mindeddig tisztázatlan, még mindig kutatások tárgya.
-%A fenti általános egyenletekbe behelyettesítve az alábbi mintegy 80 lépéses mechanizmus bruttó reakcióikat kapjuk:
+A teljes mechanizmus mindeddig tisztázatlan, még mindig kutatások tárgya. Az FKN mechanizmus egyszerűsítésével nyerhető az úgynevezett Oregonátor modell [15], amely az oszcilláló reakció kinetikai egyenleteit írja le:
 
-%\begin{enumerate}
-%\item BrO_\text{3}{-} + Br- + 2H+ → HBrO_\text{2} + HOBr 
-%\item HBrO_\text{2} + Br- + H+ → 2HOBr
-%\item BrO_\{3}- + HBrO2 + H+ → 2BrO_\text{2} + H_\text{2}O,  BrO_\text{2} + Ce3+ + H+ → HBrO_\text{2} + Ce4+
-%\item 2HBrO_\text{2} → BrO_\text{3}- + HOBr + H+
-%\item HOBr + CH_\text{2}(COOH)_\text{2} → CHBr(COOH)_\text{2} + H_\text{2}O
-%\item 4Ce\^{4+} + CHBr(COOH)_\text{2} + H_\text{2}O + HOBr → 2Br- + 4Ce3+ + 3CO_\text{2} + 6H+
-%\end{enumerate}
-
-Az FKN mechanizmus egyszerűsítésével nyerhető az úgynevezett Oregonátor modell [15], amely az oszcilláló reakció kinetikai egyenleteit írja le:
 \begin{center}
 d[HBrO2]/dt = k1*( [Br-] + [HBrO2] (1-k2[HBrO2]-[Br-] ))
 
