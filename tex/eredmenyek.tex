@@ -2,19 +2,170 @@
 \pagestyle{headings}
 
 \def\s{0.5}
+Munkám során próbáltam lépésről lépésre haladni, valamint az egyes lépések eredményeiről beszámolni. Fontosnak tartottam a korábban, mások által végzett munka főbb állomásainak reprodukálását, és azok begyakorlását. Csak akkor tértem át a következő, bonyolultabb vizsgálatra, mikor az azt megelőző, alapként szolgáló eredményeket sikeresen reprodukáltam.
+
+\section{Elektródok jellemzése} \label{elektrodokjellemzese}
+Fontos minden mérésnél karakterizálni az elektródokat.
+%elektródok ellenállása, átmérője
+\begin{table}[]
+\centering
+\caption{A cella ellenállása.}
+\label{cellaellenallas}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Elektród sorszáma}           & 1.   & 2.   & 3.   & 4.    & 5. \\ \hline
+\textbf{A cella ellenállása (M\Omega)} & 4,47 & 6,97 & 22,5 & 30,18 & 12 \\ \hline
+\end{tabular}
+\end{table}
+A \ref{cellaellenallas} ábrán a cella ellenállása látható, amit a mérő- és indikátor-elektród együttesen ad. A módszer a \ref{karakterizalas} pontban leírtak alapján végeztem el, valamint a (\ref{eq:A}) egyenlet segítségével jutottam az értékekhez.
+
+\begin{table}[]
+\centering
+\caption{Az antimon mikroelektródok ellenállása.}
+\label{elektrodellenallasa}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Elektród sorszáma}          & 1.    & 2.    & 3.     \\ \hline
+\textbf{Elektród ellenállása (\Omega)} & 23,84 & 61,42 & 111,53 \\ \hline
+\end{tabular}
+\end{table}
+A \ref{elektrodellenallasa} ábrán az antimon mikroelektródok ellenállása látható, amit a \ref{karakterizalas} pontban leírt módszer szerint hajtottam végre.
+
+\begin{table}[]
+\centering
+\caption{Az antimon mikroelektródok felülete valamint átmérője.}
+\label{elektrodokfeluleteatmeroje}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Elektródok sorszáma}           & 1.   & 2.  & 3.  \\ \hline
+\textbf{Elektródok felülete ($\upmu$m$^2$)} & 700  & 272 & 150 \\ \hline
+\textbf{Elektródok átmérője($\upmu$m)}   & 14,9 & 9,2 & 6,9 \\ \hline
+\end{tabular}
+\end{table}
+A \ref{elektrodokfeluleteatmeroje} ábrán az antimon mikroelektródok számolás útján meghatározott felülete és átmérője. A felületeket a (\ref{eq:A1}), az átmérőket az (\ref{eq:A2}) egyenletek segítségével határoztam meg. Ezek az értékek meghatározása során feltételeztem, hogy az antimon elektród kör keresztmetszetű, és az elektród folytonos illetve egyenlő vastagságú.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/square.jpg}
+\caption{A "flip-flop" 2 V-os, 200 ms-os négyszöghullámra mért potenciál.}
+\label{fig:square}
+\end{figure}
+A \ref{fig:square} ábrán látható, hogy a mérőműszer reprezentálja a "gyors" potenciál változásokat, ezzel bizonyítom, hogy vizsgálható a Belouszov-Zsabotyinszkij reakció.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/antimon_ph.jpg}
+\caption{Antimon mikroelektród pH függése.}
+\label{fig:antimon_ph}
+\end{figure}
+
+A \ref{fig:antimon_ph} képen az antimon mikroelektród pH függése látható amit a \ref{karakterizalas} pontban leírtak szerint hajtottam végre. Látható, hogy a Nernst-i (59 mV/pH) viselkedéstől kismértékben eltér a saját készítésű elektródok (46,76 mV/pH), és az irodalmi 2-8 közötti pH tartományban \cite{pfreisich1960} fennálló egyenes arányosság esetemben 3-10 közötti tartomány esetén is megfigyelhető.
+\section{Kevert BZ makroelektróddal}
+A Belouszov-Zsabotyinszkij reakció tanulmányozását a gyárilag előállított makroméretű elektródokkal kezdtem a mérés begyakorolása valamint Kőrös Endre eredményeinek \cite{noyes1972oscillations} reprodukálása végett. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/makroelektrod.jpg}
+\caption{Kevert BZ-reakció vizsgálata makroméretű platina elektróddal.}
+\label{fig:makroelektrod}
+\end{figure}
+A \ref{fig:makroelektrod} ábrán látható, hogy a \ref{celkituzes} című bekezdés 1. pontjában megemlített Field, Noyes és Kőrös eredményeit \cite{noyes1972oscillations} sikeresen reprodukáltam. Továbbá látható a kevertetett oszcilláló reakció esetén a periódusidő az idő függvényében közel lineárisan csökken. 
+
+\section{Kevert BZ mikroelektródokkal}
+A makroelektródok technika elsajátítása valamint megvalósítása után potenciometriás mikroelektródok készítése és jellemzése következett, amit a \ref{elektrodokjellemzese} pontban megemlítettem. Az így elkészített és karakterizált elektródokkal vizsgáltam a Belouszov-Zsabotyinszkij reakciót kevertetve.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/platina_kevert.jpg}
+\caption{Kevert BZ-reakció vizsgálata  platina mikroelektróddal.}
+\label{fig:platina_kevert}
+\end{figure}
+
+Az \ref{fig:platina_kevert} ábrán a \ref{celkituzes} című fejezet 3. pontjának megismétlése látható, azaz Nagy-Ungvárai és Hess munkáját sikerült reprodukálnom és az általam készített mikroelektródok alkalmazhatóságát bizonyítanom.
+
+\section{Keveretlen BZ mikroelektródokkal}
+A könnyebben vizsgálható kevertetett reakció tanulmányozása után a keveretlen reakció tanulmányozására használtam fel az általam készített különböző potenciometriás mikroelektródokat.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/platina_keveretlen.jpg}
+\caption{Redoxpotenciál vizsgálata keveretlen BZ-reakcióban, platina mikroelektróddal.}
+\label{fig:platina_keveretlen}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/szen33_keveretlen.jpg}
+\caption{Redoxpotenciál tanulmányozása keveretlen BZ-reakcióban 33 $\upmu$m-es szén mikroelektróddal.}
+\label{fig:szen33_keveretlen}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/antimon_keveretlen.jpg}
+\caption{Keveretlen BZ-reakció vizsgálata antimon mikroelektróddal erősítő nélkül.}
+\label{fig:antimon_keveretlen}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/antimon_erositovel.jpg}
+\caption{Keveretlen BZ-reakció vizsgálata antimon mikroelektróddal áramkörbe épített műveleti erősítővel.}
+\label{fig:antimon_erositovel}
+\end{figure}
+
+Az \ref{fig:antimon_keveretlen} és az \ref{fig:antimon_erositovel} ábra magyarázatot ad a \ref{mikroelektrod} című bekezdésben bemutatott műveleti erősítő alkalmazásának miértjéről, ugyanis látható, hogy az erősítővel végzett mérés során \ref{fig:antimon_erositovel} a mért potenciálok lényegesen nagyobbak, mint az erősítő nélküli vizsgálat esetében \ref{fig:antimon_keveretlen}, továbba elkerüljük az úgynevezett terhelési hibát (loading error) a műveleti erősítő alkalmazásával.
+
+\section{Pontszerű mérés keveretlen BZ}
+A keveretlen reakció elektrokémiai tanulmányozását optikai módszer felhasználásával tovább bővítettem. Az előző pontban végzett vizsgálatok alapján és a későbbiekben előkerülő miniatűrizálás érdekében szén mikroelektródokkal folyattam a vizsgálatokat. Az elektrokémiai jelet optikai képpel kombináltam,ennek eredményét  mutatom be ezen a pontban.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/pontszerumeres.png}
+\caption{Elektrokémiai kép egy pontban.}
+\label{fig:pontszerumeres}
+\end{figure}
+
+A \ref{fig:pontszerumeres} ábrán látható az optikai képhez az elektródpotenciált rendelve. A képen a kék szín az oxidált, a piros szín a redukált formához rendelhető.
+
+\section{PEKM}
+Az elektrokémiai és optikai módszert tovább gondolva kezdtem meg a PEKM alkalmazását, amely alapján elektrokémiai és optikai tér idő képet kaptam, ezeknek a képeknek a kombinálását mutatom be ebben a pontban. A két módszer kombinálásának előnye, hogy térbeli kémiai információt kapunk az adott felületről.
+A PEKM használatát a 33 $\upmu$m átmérőjű szén-mikroelektróddal próbáltam eleinte megvalósítani, de ez "túl vastagnak" bizonyult. Finomítani kellett az elektródtesten, ugyanis nagy konvektív hatása van a pásztázás közben (szemmel látható kavarodást okoz a reakcióelegyben), ami a "nagy" átmérőből fakad. Ennek kiküszöbölésére egy 7 $\upmu$m átmérőjű szén-mikroelektródot alkalmaztam, amely során nem lép fel konvekció. Szemmel láthatóan kiküszöbölésre került az elektród által okozott konvekció, ugyanis a hullámok a reakciótér faláig zavaratlan formában haladtak tovább. Ez a  vizsgálat látható a \ref{fig:secmkep} ábrán.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/secmkep.png}
+\caption{Az ábrán a fekete nagy számok a mérés időbeli változását mutatják 1-4 sorrendben. A kis fehér számok a hullámok sorszámát mutatja. A vízszintes zöld vonal a pásztázás vonalát mutatja, a függőleges kék vonal az elektród test helyét mutatja. A zöld és a kék vonal keresztezésénel található az elektródtest vége, ami 1 $\upmu$-re merült a vizsgálandó BZ-reakcióelegybe. Szemmel látható, hogy az elektródtest nem okozott konvekcionális hatást a pásztázás során.}
+\label{fig:secmkep}
+\end{figure}
+
 \begin{figure}
 %% trim = top left bottom right
 \centering
-\includegraphics[trim = 15mm 60mm 0mm 30mm, clip, width=\s\textwidth, angle=-90]{img/spacetime.eps}
-\caption{(A) Electrochemical space-time plot overlayed on top of the corresponding optical one.
-The potential of the carbon fiber microelectrode is shown as a function of spatiotemporal coordinates.
-Redox indicator was ferroin.
-The optical spatiotemporal image was grayscaled to allow better visibility when overlaying the electrochemical data.
-The brighter stripes correspond to the oxidizing waves.
-(B) The second scan cycle.
-Blue line: forward scan, red line: backwards scan.
+\includegraphics[width=0.8\textwidth]{img/spacetime2.eps}
+\caption{ Az ábrán egy elektrokémiai tér-idő képet ábrazol egy optikai tér-idő képpel a háttérben. Az optikai tér-idő kép jobban látható, amennyiben előtte feltűntetjük az elektrokémiai információt. Az ábrán látható világosabb csíkok a háttérben a BZ-reakció oxidációs hullámjait mutatja, amelyek a mikroelektródon éppen áthaladtak.
+%Electrochemical space-time plot overlayed on top of the corresponding optical one.
+%The potential of the carbon fiber microelectrode is shown as a function of spatiotemporal coordinates.
+%Redox indicator was ferroin.
+%The optical spatiotemporal image was grayscaled to allow better visibility when overlaying the electrochemical data.
+%The brighter stripes correspond to the oxidizing waves.
+%(B) The second scan cycle.
+%Blue line: forward scan, red line: backwards scan.
 %Note the shape of the peaks on the red curve, which is measured in the direction that is opposite to the chemical wave travel.
 %The elongated portion of these peaks where the potential is decreasing, is not due to 
 }
 \label{fig:spatiotemporal}
 \end{figure}
+A \ref{fig:spatiotemporal} ábráról, valamint a készülék által rögzített koordináta, idő, potenciál adatokból meghatározhatjuk azon hullámok sebességét, melyeken a pásztázás során többször is adatot gyűjtöttünk. Ezeket az adatokat \ref{hullam} táblázatban foglaltam össze, és számítottam ki a hullámok terjedési sebességét.
+
+\begin{table}[] 
+\centering
+\caption{PEKM pásztázás eredményei}
+\label{hullam}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Hullám sorszáma} & \textbf{t (s)} & \textbf{E (mV)} & \textbf{x (mm)} & \textbf{v ($\upmu$m/s)}        \\ \hline
+\multirow{2}{*}{2}       & 17             & 978             & 6,4             & \multirow{2}{*}{169,23} \\ \cline{2-4}
+                         & 30             & 977             & 8,6             &                         \\ \hline
+\multirow{3}{*}{5}       & 49             & 968             & 1               & \multirow{3}{*}{191,3}  \\ \cline{2-4}
+                         & 64             & 975             & 4,8             &                         \\ \cline{2-4}
+                         & 83,5           & 1027            & 7,6             &                         \\ \hline
+\end{tabular}
+\end{table}
