@@ -2,65 +2,15 @@
 \pagestyle{headings}
 
 \def\s{0.5}
-Munkám során próbáltam lépésről lépésre haladni, valamint az egyes lépések eredményeiről beszámolni. Fontosnak tartottam a korábban, mások által végzett munka főbb állomásainak reprodukálását, és azok begyakorlását. Csak akkor tértem át a következő, bonyolultabb vizsgálatra, mikor az azt megelőző, alapként szolgáló eredményeket sikeresen reprodukáltam.
+Munkám során próbáltam lépésről lépésre haladni, valamint az egyes lépések eredményeiről beszámolni. Fontosnak tartottam a korábban, mások által végzett munka főbb állomásainak reprodukálását, és azok begyakorlását. Csak akkor tértem át a következő, bonyolultabb vizsgálatra, mikor az azt megelőző, alapként szolgáló eredményeket sikeresen reprodukáltam. Az oszcilláló reakció vizsgálata előtt meggyőződtem róla, hogy a használt potenciometriás mérőcella elég gyorsan tudja-e követni a reakcióban fellépő potenciálváltozást. Ehhez egy \emph{,,flip--flop''} áramkört használtam, mely nagyon gyors potenciálugrás produkálására képes. A \ref{fig:square} ábrán látható, hogy a mérőműszer reprezentálja a "gyors" potenciál változásokat, ezzel bizonyítom, hogy vizsgálható a Belouszov-Zsabotyinszkij reakció.
 
-\section{Elektródok jellemzése} \label{elektrodokjellemzese}
-Fontos minden mérésnél karakterizálni az elektródokat.
-%elektródok ellenállása, átmérője
-\begin{table}[]
-\centering
-\caption{A cella ellenállása.}
-\label{cellaellenallas}
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\textbf{Elektród sorszáma}           & 1.   & 2.   & 3.   & 4.    & 5. \\ \hline
-\textbf{A cella ellenállása (M\Omega)} & 4,47 & 6,97 & 22,5 & 30,18 & 12 \\ \hline
-\end{tabular}
-\end{table}
-A \ref{cellaellenallas} ábrán a cella ellenállása látható, amit a mérő- és indikátor-elektród együttesen ad. A módszer a \ref{karakterizalas} pontban leírtak alapján végeztem el, valamint a (\ref{eq:A}) egyenlet segítségével jutottam az értékekhez.
-
-\begin{table}[]
-\centering
-\caption{Az antimon mikroelektródok ellenállása.}
-\label{elektrodellenallasa}
-\begin{tabular}{|l|l|l|l|}
-\hline
-\textbf{Elektród sorszáma}          & 1.    & 2.    & 3.     \\ \hline
-\textbf{Elektród ellenállása (\Omega)} & 23,84 & 61,42 & 111,53 \\ \hline
-\end{tabular}
-\end{table}
-A \ref{elektrodellenallasa} ábrán az antimon mikroelektródok ellenállása látható, amit a \ref{karakterizalas} pontban leírt módszer szerint hajtottam végre.
-
-\begin{table}[]
-\centering
-\caption{Az antimon mikroelektródok felülete valamint átmérője.}
-\label{elektrodokfeluleteatmeroje}
-\begin{tabular}{|l|l|l|l|}
-\hline
-\textbf{Elektródok sorszáma}           & 1.   & 2.  & 3.  \\ \hline
-\textbf{Elektródok felülete ($\upmu$m$^2$)} & 700  & 272 & 150 \\ \hline
-\textbf{Elektródok átmérője($\upmu$m)}   & 14,9 & 9,2 & 6,9 \\ \hline
-\end{tabular}
-\end{table}
-A \ref{elektrodokfeluleteatmeroje} ábrán az antimon mikroelektródok számolás útján meghatározott felülete és átmérője. A felületeket a (\ref{eq:A1}), az átmérőket az (\ref{eq:A2}) egyenletek segítségével határoztam meg. Ezek az értékek meghatározása során feltételeztem, hogy az antimon elektród kör keresztmetszetű, és az elektród folytonos illetve egyenlő vastagságú.
-
-
-\begin{figure}[h]
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{img/square.jpg}
 \caption{A "flip-flop" 2 V-os, 200 ms-os négyszöghullámra mért potenciál.}
 \label{fig:square}
 \end{figure}
-A \ref{fig:square} ábrán látható, hogy a mérőműszer reprezentálja a "gyors" potenciál változásokat, ezzel bizonyítom, hogy vizsgálható a Belouszov-Zsabotyinszkij reakció.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{img/antimon_ph.jpg}
-\caption{Antimon mikroelektród pH függése.}
-\label{fig:antimon_ph}
-\end{figure}
-
-A \ref{fig:antimon_ph} képen az antimon mikroelektród pH függése látható amit a \ref{karakterizalas} pontban leírtak szerint hajtottam végre. Látható, hogy a Nernst-i (59 mV/pH) viselkedéstől kismértékben eltér a saját készítésű elektródok (46,76 mV/pH), és az irodalmi 2-8 közötti pH tartományban \cite{pfreisich1960} fennálló egyenes arányosság esetemben 3-10 közötti tartomány esetén is megfigyelhető.
 \section{Kevert BZ makroelektróddal}
 A Belouszov-Zsabotyinszkij reakció tanulmányozását a gyárilag előállított makroméretű elektródokkal kezdtem a mérés begyakorolása valamint Kőrös Endre eredményeinek \cite{noyes1972oscillations} reprodukálása végett. 
 \begin{figure}[h]
@@ -72,7 +22,9 @@ A Belouszov-Zsabotyinszkij reakció tanulmányozását a gyárilag előállítot
 A \ref{fig:makroelektrod} ábrán látható, hogy a \ref{celkituzes} című bekezdés 1. pontjában megemlített Field, Noyes és Kőrös eredményeit \cite{noyes1972oscillations} sikeresen reprodukáltam. Továbbá látható a kevertetett oszcilláló reakció esetén a periódusidő az idő függvényében közel lineárisan csökken. 
 
 \section{Kevert BZ mikroelektródokkal}
-A makroelektródok technika elsajátítása valamint megvalósítása után potenciometriás mikroelektródok készítése és jellemzése következett, amit a \ref{elektrodokjellemzese} pontban megemlítettem. Az így elkészített és karakterizált elektródokkal vizsgáltam a Belouszov-Zsabotyinszkij reakciót kevertetve.
+
+Az \ref{fig:platina_kevert} ábrán a \ref{celkituzes} című fejezet 3. pontjának megismétlése látható, azaz Nagy-Ungvárai és Hess munkáját sikerült reprodukálnom és az általam készített mikroelektródok alkalmazhatóságát bizonyítanom.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/platina_kevert.jpg}
@@ -80,7 +32,6 @@ A makroelektródok technika elsajátítása valamint megvalósítása után pote
 \label{fig:platina_kevert}
 \end{figure}
 
-Az \ref{fig:platina_kevert} ábrán a \ref{celkituzes} című fejezet 3. pontjának megismétlése látható, azaz Nagy-Ungvárai és Hess munkáját sikerült reprodukálnom és az általam készített mikroelektródok alkalmazhatóságát bizonyítanom.
 
 \section{Keveretlen BZ mikroelektródokkal}
 A könnyebben vizsgálható kevertetett reakció tanulmányozása után a keveretlen reakció tanulmányozására használtam fel az általam készített különböző potenciometriás mikroelektródokat.
@@ -97,23 +48,6 @@ A könnyebben vizsgálható kevertetett reakció tanulmányozása után a kevere
 \caption{Redoxpotenciál tanulmányozása keveretlen BZ-reakcióban 33 $\upmu$m-es szén mikroelektróddal.}
 \label{fig:szen33_keveretlen}
 \end{figure}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{img/antimon_keveretlen.jpg}
-\caption{Keveretlen BZ-reakció vizsgálata antimon mikroelektróddal erősítő nélkül.}
-\label{fig:antimon_keveretlen}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{img/antimon_erositovel.jpg}
-\caption{Keveretlen BZ-reakció vizsgálata antimon mikroelektróddal áramkörbe épített műveleti erősítővel.}
-\label{fig:antimon_erositovel}
-\end{figure}
-
-Az \ref{fig:antimon_keveretlen} és az \ref{fig:antimon_erositovel} ábra magyarázatot ad a \ref{mikroelektrod} című bekezdésben bemutatott műveleti erősítő alkalmazásának miértjéről, ugyanis látható, hogy az erősítővel végzett mérés során \ref{fig:antimon_erositovel} a mért potenciálok lényegesen nagyobbak, mint az erősítő nélküli vizsgálat esetében \ref{fig:antimon_keveretlen}, továbba elkerüljük az úgynevezett terhelési hibát (loading error) a műveleti erősítő alkalmazásával.
 
 \section{Pontszerű mérés keveretlen BZ}
 A keveretlen reakció elektrokémiai tanulmányozását optikai módszer felhasználásával tovább bővítettem. Az előző pontban végzett vizsgálatok alapján és a későbbiekben előkerülő miniatűrizálás érdekében szén mikroelektródokkal folyattam a vizsgálatokat. Az elektrokémiai jelet optikai képpel kombináltam,ennek eredményét  mutatom be ezen a pontban.
