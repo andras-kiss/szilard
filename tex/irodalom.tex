@@ -12,8 +12,14 @@ A PEKM a pásztázó mikroszkópos technikák egyik változata. Az első pászt�
 
 \subsection{Működése}
 
-A többi pásztázó technikához hasonlóan a PEKM alapja is a raszteres képalkotás. A képalkotás során a mérőcsúcsot mozgatjuk egy előre meghatározott program szerint. A program általában egy meander vonalat követ kétdimenziós pásztázás esetén, illetve egy vonal mentén pásztáz ide-oda egydimenziós pásztázás esetén. A mérési pontokon a mérőcsúcsot a program megállítja, és egy lokális mérést végez. Amperometria esetén a mérőelektródot mozgatjuk, a segédelektród és a referenciaelektród egy meghatározott helyen áll, általában a cella szélén, távol a méréstől. Potenciometriás üzemmódban ionszelektív mikroelektródot használunk, és ennek potenciálját mérjük a referenciaelektródéhoz képest. Segítségével egy elektrokémiai, valós térbeli képet kaphatunk arról az ionféleségről, melyre a mikroelektrós szelektív. Ezt a változatot használják többek között korróziós tanulmányokban a korrózió következtében kioldódott fémionok térképezésére \cite{bastos2010micropotentiometric, lamaka2008monitoring, karavai2010localized}. Munkám során potenciometriás PEKM-et használtam, a következő részben ezért kitérek a potenciometriás méréstechnikára.
+A többi pásztázó technikához hasonlóan a PEKM alapja is a raszteres képalkotás. A képalkotás során a mérőcsúcsot mozgatjuk egy előre meghatározott program szerint. A program általában egy meander vonalat követ kétdimenziós pásztázás esetén, illetve egy vonal mentén pásztáz ide-oda egydimenziós pásztázás esetén. A mérési pontokon a mérőcsúcsot a program megállítja, és egy lokális mérést végez (\ref{fig:PEKM} ábra). Amperometria esetén a mérőelektródot mozgatjuk, a segédelektród és a referenciaelektród egy meghatározott helyen áll, általában a cella szélén, távol a méréstől. Potenciometriás üzemmódban ionszelektív mikroelektródot használunk, és ennek potenciálját mérjük a referenciaelektródéhoz képest. Segítségével egy elektrokémiai, valós térbeli képet kaphatunk arról az ionféleségről, melyre a mikroelektrós szelektív. Ezt a változatot használják többek között korróziós tanulmányokban a korrózió következtében kioldódott fémionok térképezésére \cite{bastos2010micropotentiometric, lamaka2008monitoring, karavai2010localized}. Munkám során potenciometriás PEKM-et használtam, a következő részben ezért kitérek a potenciometriás méréstechnikára.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{img/PEKM.png}
+\caption{Pásztázó elektrokémiai mikroszkóp működésének szemléltetése. A módszert leggyakrabban felületvizsgálatra használják, melynek során a felület felett egy előre meghatározott pontrendszer (fekete pontok) mentén (folytonos meander vonal) lokális mérések végeznek egy -- általában -- szelektív mérőcsúccsal (potenciometriás mikroelektród). A mozgatást a PEKM léptetőmotorok segítségével valósítja meg a tér három tengelye mentén.}
+\label{fig:PEKM}
+\end{figure}
 
 
 \subsection{Potenciometria}
@@ -57,15 +63,10 @@ E= E_\text{i} - E_\text{v} + E_\text{d}
 \end{equation}
 
 ahol $E$ az elektrokémiai cella feszültsége, $E_\text{i}$ az indikátorelektródon a meghatározandó komponens által generált feszültség, $E_\text{v}$ a viszonyító elektród konstans potenciálja, $E_\text{d}$ a fent említett alacsony állandó értéken tartott diffúziós potenciál.
-A potenciometriát két csoportra bonthatjuk vizsgálati szempontból: 
+A potenciometriát két csoportra bonthatjuk vizsgálati szempontból: Direkt, vagy indirekt potenciometria. Az indirekt potenciometria során közzvetlenül mérjük az elektromotoros erőt vagy az elektródpotenciált, amelyekből következtethetünk az elektródaktív komponens keresett koncentrációjára. Ezen mérés hibája viszonylag magas, ugyanis az elektródaktív anyag egy nagyságrendnyi koncentrációváltozása 0,059/n V (59/n mV) potenciálváltozást eredményez, az egyenletben n a elektronok száma amelyek az elektródreakcióban részt vesznek. Abban az esetben beszélünk indirekt potenciometriás analízisről, ha egy titrálást potenciometriás végpontjelzéssel hajtunk végre, ebben az esetben indirekt a mérés. A imént említett mérés során az indikátorelektród a meghatározandó elektródaktív komponenset tartalmazó oldatba merül, ahol mérőoldat hozzáadása után mérjük az elektromotoros erő váltázását. A végpontot a kísérletileg meghatározott titrálási görbe inflexiós pontja adják meg. A mérés pontossága nem a feszültség mérés  pontossága, hanem a végpont meghatározásának pontossága fogja megszadni, így az indirekt mérés hibája kisebb lesz a direkt módszerrel szemben.
 
-\begin{itemize}
-\item[--]Direkt potenciometria: ennél a módszernél közvetlenül mérjük az elektromotoros erőt vagy az elektródpotenciált, amelyekből következtethetünk az elektródaktív komponens keresett koncentrációjára. Ezen mérés hibája viszonylag magas, ugyanis az elektródaktív anyag egy nagyságrendnyi koncentrációváltozása 0,059/n V (59/n mV) potenciálváltozást eredményez, az egyenletben n a elektronok száma amelyek az elektródreakcióban részt vesznek.
-\item[--]Indirekt potenciometria: abban az esetben beszélünk indirekt potenciometriás analízisről, ha egy titrálást potenciometriás végpontjelzéssel hajtunk végre, ebben az esetben indirekt a mérés. A imént említett mérés során az indikátorelektród a meghatározandó elektródaktív komponenset tartalmazó oldatba merül, ahol mérőoldat hozzáadása után mérjük az elektromotoros erő váltázását. A végpontot a kísérletileg meghatározott titrálási görbe inflexiós pontja adják meg. A mérés pontossága nem a feszültség mérés  pontossága, hanem a végpont meghatározásának pontossága fogja megszadni, így az indirekt mérés hibája kisebb lesz a direkt módszerrel szemben.
-\end{itemize}
+A potenciometriás elektródok működésük alapján két csoportba sorolhatók:
 
-Potenciometriás elektródok:
-Működésük alapján két csoportba sorolhatók:
 \begin{itemize}
 \item[•]ioncsere-egyensúlyon alapuló elektródok
 \item[•]elektroncsere-egyensúlyon alapuló elektródok.
@@ -75,15 +76,17 @@ Ebben a pontban csak a méréseim során használt elektródtípusokat mutatom b
 \begin{enumerate}
 \item Redoxielektródok:\\
 Működése elektroncsere-egyensúlyon alapul. Redoxi rendszerekben az inert fémek (pl.:Pt, Au) vagy grafitelektródok biztosítják az elektronoknak a vizsgálandó komponens redukált formájából az oxidált formába való folyamatos átmenetével járó egyensúlyt. A mért potenciál értéket a Nernst-Peters-egyenlet értelmében, a redoxirendszer oxidált és redukált formáinak koncentráció hányadosa adja meg:
+
 \begin{equation}
 E= E_\text{0} + \frac{0,059}{z} * \frac{[ox.]}{[red.]}
 \end{equation}
-A munkám során a redoxielektród platina és szénszálelektród formájában került alkalmazásra.
-táblázat..
+
+Munkám során a redoxielektród platina és szénszálelektród volt.
 \item Elsőfajú fémelektródok:\\
-Azon fémek alkalmasak elsőfajú elektród alapanyagának, melyeknél a  fém felületén kialakuló feszültség a saját ionjait tartalmazó oldatba merülve Nernst-i viselkedést mutat, az elektród potenciálját csak az oldatban lévő ionjaik aktivitása határozza meg. Elsőfajú elektróddal fémionkoncentráció és fémionaktivitás mérhető.Az elektród nem készíthető olyan fémekből, amik oldatban passziválódnak (vas, kobalt, nikkel és alumínium) viszont ezüstből, ólomból, kadmiumból, higanyból, ónból, bizmutból, cinkből és talliumből gond nélkül készíthető elsőfajú elektród. A legelterjedtebb az ezüst- és a higanyelektród.
+Azon fémek alkalmasak elsőfajú elektród alapanyagának, melyeknél a  fém felületén kialakuló feszültség a saját ionjait tartalmazó oldatba merülve Nernst-i viselkedést mutat, az elektród potenciálját csak az oldatban lévő ionjaik aktivitása határozza meg. Elsőfajú elektróddal fémionkoncentráció és fémionaktivitás mérhető. Az elektród nem készíthető olyan fémekből, amik oldatban passziválódnak (vas, kobalt, nikkel és alumínium) viszont ezüstből, ólomból, kadmiumból, higanyból, ónból, bizmutból, cinkből és talliumből gond nélkül készíthető elsőfajú elektród. A legelterjedtebb az ezüst- és a higanyelektród.
+
 \item Másodfajú elektród: \cite{pfreisich1960}\\
-A másodfajú elektródokat többnyire referencia (viszonyító) elektródként alkalmazzák. A gyarlatban használt másodfajú elektródok például az Ag/AgCl és Hg/Hg$_2$Cl$_2$, amelyek egy fémból, a fém sójából, valamit a nehezen oldható só anionjának nagy koncentrációjú oldatából áll. Ezüst-klorid elektród esetén az elektród potenciálját az oldatban lévő ezüst-ionok aktivitása határozza meg.\\
+A másodfajú elektródokat többnyire referencia (viszonyító) elektródként alkalmazzák. A gyakorlatban használt másodfajú elektródok például az Ag/AgCl és Hg/Hg$_2$Cl$_2$, amelyek egy fémből, a fém sójából, valamit a nehezen oldható só anionjának nagy koncentrációjú oldatából áll. Ezüst-klorid elektród esetén az elektród potenciálját az oldatban lévő ezüst-ionok aktivitása határozza meg.\\
 
 \begin{equation}
 E = E_0 + 0.059 \times \lg [Ag^+]
@@ -111,6 +114,7 @@ A fenti egyenletekből következik, hogy az ezüst-klorid elektród potenciálj�
 
 
 \section{A Belouszov-Zsabotyinszkij oszcilláló reakció}
+
 Dolgozatom elsősorban a PEKM technika új alkalmazási területével foglalkozik, a Belouszov-Zsabotyinszkij reakciót pedig csak modellrendszerként használtam munkám során. Témavezetőmmel olyan rendszert kerestünk, melyben jelentős ionaktivitás grádiens léphet fel homogén folyadékfázisú rendszerben. Megfelelő példának tűnt a BZ reakció, melynek keveretlen lefolyása esetén térbeli mintázatok alakulnak ki. A térbeli mintázatok mentén változik többek között a bromid-ion aktivitás és a redox-potenciál, két olyan paraméter, melyek kiválóan mérhetők potenciometriás PEKM technikával. Ezek közül a redox-potenciál térképezését választottam. A továbbiakban áttekintem az oszcilláló jelenségeket, bemutatom a BZ reakció főbb irodalmát, különös tekintettel a vizsgálati módszerekre.
 
 \subsection{Oszcilláló jelenségek}
@@ -125,30 +129,31 @@ A kémiai oszcilláló rendszerek ismerete a XVII. század végére vezethető v
 Heterogén oszcilláló jelenség jól megfigyelhető a „higanyszív” nevezetű reakció esetében is, amely során kálium-bromátos híg kénsavoldatban lévő higany csepphez egy vasszöget érintve a higany pulzáló mozgást végez. Ezt a jelenséget a higany- és a vas felületén lejátszódó bonyolult elektrokémiai jelenséggel magyarázhatjuk, ahol az oldatban lévő higany pozitív a vasé negatív töltésű. A tű érintésére a töltés közömbösítődik, ezért a higanycsepp összerándul, majd ezt az összerándulást periodikusan folytatja.
 
 \subsection{A bromát-oszcillátor} \label{bromatoszcillator}
-Ugyan az első homogén fázisú oszcillálló jelenséget -- jodátion katalizált hidrogén-peroxid bomlásakor megfigyelhető oszcillációt -- Bray tette 1921-ben \cite{bray1921periodic}, a leghíresebbet Belouszov írta le 1955-ben \cite{belousov1959collection}. Felfedezte, hogy citromsav kénsavas közegben és Ce(IV)/Ce(III) ionokkal katalizált bromátos oxidációja során az oldat színe a katalizátor oxidált (sárga szín)és redukált állapotára (színtelen) jellemző színek között oszcillál.
+Ugyan az első homogén fázisú oszcillálló jelenséget -- jodátion katalizált hidrogén-peroxid bomlásakor megfigyelhető oszcillációt -- Bray fedezte fel 1921-ben \cite{bray1921periodic}, a leghíresebbet Belouszov írta le 1955-ben \cite{belousov1959collection}. Felfedezte, hogy citromsav kénsavas közegben és Ce(IV)/Ce(III) ionokkal katalizált bromátos oxidációja során az oldat színe a katalizátor oxidált (sárga szín) és redukált állapotára (színtelen) jellemző színek között oszcillál.
 
-A reakciót Zhabotinsky továbbfejlesztette és adta meg a Belousov reakció vázmechanizmusát. A Belousov Zhabotinsky \cite{zhabotinsky1964periodical} reakció:
-Az eredeti reakcióban Belousov által használt citromsavat, mint szerves szubsztrátot malonsavval helyettesítette Zhabotinsky, a Ce(IV) helyett ferroin indikátort vagy Mn(II)-t alkalmazott katalizátorként, így a reakció általános összetétele: Bromát-Szubsztrát-Katalizátor-Sav.
-Minden olyan reakciót, ahol valamilyen szerves szubsztrátumot oxidálunk savas bromáttal átmeneti-fémionok jelenlétében Belousov-Zhabotinsky reakciónak nevezünk. Erre a reakcióra Richard J. Field, Kőrös Endre, Richard M. Noyes kidolgoztak egy modellt \cite{noyes1972oscillations}, amit a nevük után Field-Kőrös-Noyes (FKN) modellnek neveznek. A mintegy 80 lépéses mechanizmus bruttó reakciói:
-Általános alakban:
+A reakciót Zsabotyinszkij továbbfejlesztette \cite{zhabotinsky1964periodical} és adta meg a Belouszov reakció vázmechanizmusát. Az eredeti reakcióban Belouszov által használt citromsavat, mint szerves szubsztrátot malonsavval helyettesítette Zsabotyinszkij, a Ce(IV) helyett ferroin indikátort vagy Mn(II)-t alkalmazott katalizátorként.
 
-\begin{enumerate}
-\item A+Y → X
-\item X+Y → P
-\item B+X → 2X + 2Z
-\item 2X → Q
-\item Z → ½ Y
-\end{enumerate}
+Minden olyan reakciót, ahol valamilyen szerves szubsztrátumot oxidálunk savas bromáttal átmeneti-fémionok jelenlétében Belouszov-Zsabotyinszkij reakciónak nevezünk. Erre a reakcióra Richard J. Field, Kőrös Endre, Richard M. Noyes kidolgoztak egy modellt \cite{noyes1972oscillations}, amit a nevük után Field-Kőrös-Noyes (FKN) modellnek neveznek. A mechanizmus szerint a rendszer két kinetikai (I. és II. kinetikai állapot) állapot között oszcillál, amit a bromid-ion koncentráció határoz meg.
+Az első állapot során a rendszer bromid-iont fogyaszt a reakció során, így annak koncentrációja folyamatosan csökken. A második kinetikai állapotban a redukált katalizátor (ferroin-indikátor) oxidálódik. Fontos jellemzője a II. kinetikai állapotnak, hogy a brómossav autokatalitikusan képződésik. Az I. állapot szükségeszűen a II. állapotba vezet. Ahhoz, hogy a reakció oszcillálhasson, kell egy út a II. és az I. állapot között. Ez az oxidált katalizátor redukciójával valósul meg, mely során bromid-ionok képződnek, így a rendszer visszajut a kiindulási állapotba, ahol a ciklus újra kezdetét veszi. A reakció során a katalizátor (ferroin) oxidált és redukált aránya oszcillál, ezt az analitikai paramétert vizsgáltam a munkám folyamán.
 
-ahol A,B = BrO$_3^-$, X = HBrO$_2$, Y = Br$^-$, Z = Ce$^{4+}$ szerepét tölti be. A teljes mechanizmus mindeddig tisztázatlan, még mindig kutatások tárgya. Az FKN mechanizmus egyszerűsítésével nyerhető az úgynevezett Oregonátor modell \cite{field1974oscillations}, amely az oszcilláló reakció kinetikai egyenleteit írja le:
 
-\begin{center}
-d[HBrO$_2$]/dt = k$_1$*( [Br$^-$] + [HBrO$_2$] (1-k$_2$[HBrO$_2$]-[Br$^-$] ))
+%\begin{enumerate}
+%\item A+Y → X
+%\item X+Y → P
+%\item B+X → 2X + 2Z
+%\item 2X → Q
+%\item Z → ½ Y
+%\end{enumerate}
 
-d[Br-]/dt = ( [Ce$^{4+}$] - (1 + [HBrO$_2$] ) [Br$^-$] )/k$_1$
+%ahol A,B = BrO$_3^-$, X = HBrO$_2$, Y = Br$^-$, Z = Ce$^{4+}$ szerepét tölti be. A %teljes mechanizmus mindeddig tisztázatlan, még mindig kutatások tárgya. Az FKN mechanizmus egyszerűsítésével nyerhető az úgynevezett Oregonátor modell \cite{field1974oscillations}, amely az oszcilláló reakció kinetikai egyenleteit írja le:
 
-d[Ce$^{4+}$]/dt = k$_3$ ( [HBrO$_2$] - [Ce$^{4+}$] )
-\end{center}
+%\begin{center}
+%d[HBrO$_2$]/dt = k$_1$*( [Br$^-$] + [HBrO$_2$] (1-k$_2$[HBrO$_2$]-[Br$^-$] ))
+
+%d[Br-]/dt = ( [Ce$^{4+}$] - (1 + [HBrO$_2$] ) [Br$^-$] )/k$_1$
+
+%d[Ce$^{4+}$]/dt = k$_3$ ( [HBrO$_2$] - [Ce$^{4+}$] )
+%\end{center}
 
 %A három sebességi állandó értékei (k$_1$ = 77,27;    k$_2$ = 8,375*10-6 ; k$_3$ = 0,161), valamint az önkényes normált kiindulási koncentrációk ( [HBrO$_2$]=4 ; [Br$^-$]=1,3314 ; [Ce$^{4+}$]=2,85235 ) mellett a megoldás periodikus. A t=3029 (dimenziómentes idő) hosszúságú ciklus végén a koncentrációk visszatérnek a kiindulási állapotba.
 
@@ -175,7 +180,7 @@ d[Ce$^{4+}$]/dt = k$_3$ ( [HBrO$_2$] - [Ce$^{4+}$] )
 %\\Br2 → Br2 (g)
 %\end{center}
 
-Az oszcilláció kialakulásának feltételei:
+A nettó reakció: ... Ezen reakció során a szabadentalpia monoton csökken, ez hajtja a reakciót. A reakció azért lehetséges, mert a bromát-ion nem reagál közvetlenül a malonsavval jelentős sebességgel. Az oszcilláció kialakulásának feltételei:
 \begin{enumerate}
 \item a termodinamikai egyensúlytól távoli rendszer
 \item instabilitást előidéző kémiai reakciók a mechanizmusban:
@@ -185,7 +190,7 @@ Az oszcilláció kialakulásának feltételei:
 \end{itemize}
 \end{enumerate}
 
-Az oszcilláló reakciók lényege a negatív visszacsatolás, ami megakadályozza egy közti termék koncentrációjának megszaladását.
+Az oszcilláló reakciók lényege a negatív visszacsatolás, ami megakadályozza egy közti termék koncentrációjának hirtelen növekedését.
 Kémia oszcillálóról akkor beszélünk, ha a reakcióban résztvevő komponensek koncentrációja nem monoton, hanem periodikusan változik. Koncentráció oszcilláció megjelenhet az idő illetve a térskálán. Amennyiben az időskálán jelenik meg a koncentráció oszcilláció, akkor az oszcilláló komponens koncentrációjával arányos jel nyomon követhető például elektródpotenciál mérésével.
 Az oszcilláló jelek lehetnek szabályosak (periodikus) illetve szabálytalanok (aperiodikus). Szabálytalan jeleket kémiai káosznak neveznek. A koncentráció oszcilláció előbbiekben említett módon a térkoordinták mentén is kialakulhatnak, ebben az esetben kémiai mintázatok alakulnak ki az oszcilláció kinetika és diffúzió következtében.
 
