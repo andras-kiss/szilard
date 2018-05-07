@@ -16,8 +16,7 @@ Amepox A és B komponensét 1:1 arányban összekevertem, majd egy gyárilag el�
 \label{fig:ionophores}
 \end{figure}
 
-7$\upmu$m-es szén-mikroelektród készítése:
-Egy elektronikai tűfejléc "nőstényébe" (female pin header, Helyi elektronikai boltban vásárolt) egy 7$\upmu$m-es szénszálat (Toray Torayca T700S 24K, 19002 50th Avenue East, Tacoma, WA 98446) beleforrasztottam forrasztóón segítségével úgy, hogy a szénszál kb. 1cm hosszan lógjon ki.A fejléc másik felében egy gyárilag beleforrasztott 1mm átmérőjű rézdrót van, amely az elektromos kontaktust biztosítja.
+A 7 $\upmu$m-es szén-mikroelektródot a következőképpen készítettem. Egy elektronikai csatlakozótűbe (,,female pin header'', helyi elektronikai boltban vásárolt) egy 7 $\upmu$m-es szénszálat (Toray Torayca T700S 24K, 19002 50th Avenue East, Tacoma, WA 98446) beleforrasztottam forrasztóón segítségével úgy, hogy a szénszál kb. 1 cm hosszan lógjon ki.A fejléc másik felében egy gyárilag beleforrasztott 1 mm átmérőjű rézdrót volt, amely az elektromos kontaktust biztosítja.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{img/szenmikro.png}
@@ -25,7 +24,7 @@ Egy elektronikai tűfejléc "nőstényébe" (female pin header, Helyi elektronik
 \label{fig:ionophores}
 \end{figure}
 
-\paragraph{Válaszgyorsaság vizsgálata}
+%\paragraph{Válaszgyorsaság vizsgálata}
 
 Az oszcilláló reakciók tanulmányozása előtt a mérőműszer válaszgyorsaságát vizsgáltam, hogy biztos legyek benne, hogy elég gyors a kémiai hullámok mérésére. A potenciometriás cella ellenállása és a mérőműszer bemeneti kapacitása együttesen határozza meg az időállandót, mely a cella reagálási sebességét leíró paraméter \cite{kiss2015deconvolution}. A vizsgálatot \emph{,,flip-flop''} típusú 2 V-os 200 ms-os jelgenerátorral végeztem, ami oszcilláló viselkedést mutat. Érdekesség, hogy ez a rendszer ugyanolyan (relaxációs) oszcillátor, mint a vizsgált BZ reakció.
 
@@ -41,7 +40,7 @@ Gyárilag előállított 25 $\upmu$m átmérőjű platina szálat (Goodfellow Ma
 
 \section{Oszcilláló reakciók tanulmányozása} 
 
-Minden oszcilláló reakciót a következő “hardver” és szoftver felhasználásával hajtottam végre. Indikátor elektród (platina, szén) Ag/AgCl referencia elektród volt az alkalmazott “hardver”.  Az alkalmazott szoftver az EDAQ Chart (Doig Ave, Denistone East NSW 2112, Australia),  méréstartományként 1V-ot alkalmaztam, mintavételezési frekvenciaként 10 Hz-et állítottam be. A mérési adatokat számítógép rögzítette, ami a mérőcellához volt kapcsolva.
+Minden oszcilláló reakciót a következő eszközök felhasználásával hajtottam végre. Platina vagy szén indikátor elektród és  Ag/AgCl referencia elektródokat használtam. Az alkalmazott szoftver az EDAQ Chart (Doig Ave, Denistone East NSW 2112, Australia) volt. Méréstartományként 1 V-ot alkalmaztam, mintavételezési frekvenciaként 10 Hz-et állítottam be. A mérési adatokat számítógép rögzítette, ami a mérőcellához volt kapcsolva.
 
 \begin{figure}[h!]
 \centering
@@ -52,8 +51,8 @@ Minden oszcilláló reakciót a következő “hardver” és szoftver felhaszn�
 
 
 \subsection{Makroelektródokkal}
-\begin{enumerate}
-\item Vizsgálataim során két különböző oszcilláló reakciót tanulmányoztam az általam készített, az előbbiekben említett elektródokkal. 
+
+Vizsgálataim során két különböző oszcilláló reakciót tanulmányoztam az általam készített, az előbbiekben említett elektródokkal. 
 Először a következő oszcillátor összetételt vizsgáltam \ref{my-label}.
 \begin{table}[h!]
 \centering
@@ -67,8 +66,6 @@ Térfogat (cm$^3$) & 12       & 9             & 11     & 6              & 1     
 \end{tabular}
 \end{table}\\
 Ezek a mennyiségek bemérését meghatározott sorrendben végeztem a következőképpen: Először a kétszer ioncserélt vizet mértem be, majd a malonsavat, kálium-bromátot (Reanal Laborvegyszer Kft., Budapest, Magyarország), kénsavat és végezetül a mangán-szulfátot. A reakció a mangán-szulfát hozzáadása után indult. A reakcióelegyet mágneses keverővel kevertem. Ennek a reakciónak a tanulmányozásából messzemenő következtetéseket nem lehet levonni, csak a Field, Noyes és Kőrös által publikált eredmények reprodukálása \cite{noyes1972oscillations} volt a cél, amint azt már a \ref{bromatoszcillator} című fejezetben említettem.
-\item A kevertetett reakció esetén spektrofotometriásan meghatároztam a piros illetve a kék szín abszorbciós maximumát.
-\end{enumerate}
 
 \subsection{Mikroelektródokkal} \label{mikroelektrod}
 
@@ -76,24 +73,27 @@ A Field, Noyes és Kőrös által elért eredmények reprodukálása utána \cit
 A továbbiakban vizsgált oszcilláló reakciót kevertetés nélkül, a következő összetételű oldatokkal dolgoztam: 
 
 \begin{itemize} \label{komponensek}
-\item A oldat: 67ml H$_2$O + 5g KBrO$_3$ + 2ml H$_2$SO$_4$
-\item B oldat: 1g malonsav + 10ml H$_2$O
-\item C oldat: 1g KBr + 10ml H$_2$O
+\item A oldat: 67 ml H$_2$O + 5 g KBrO$_3$ + 2 ml H$_2$SO$_4$
+\item B oldat: 1 g malonsav + 10 ml H$_2$O
+\item C oldat: 1 g KBr + 10 ml H$_2$O
 \end{itemize}
 
-Az mikroelektródok esetében erősítőt kellett beépíteni az áramkörbe, a terhelési hiba kiküszöbölése végett. A műveleti erősítővel az áramkör kapcsolási rajza az \ref{fig:erosito} ábrán látható. A mikroelektródok jelének felerősítése egy TL082-műveleti erősítővel valósult meg a gyakorlatban.
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\textwidth]{img/erosito2.png}
-\caption{Feszültségosztó módszer kapcsolási rajza.}
-\label{fig:erosito}
-\end{figure}
+Az mikroelektródok esetében erősítőt kellett beépíteni az áramkörbe, a terhelési hiba kiküszöbölése végett. 
+%A műveleti erősítővel az áramkör kapcsolási rajza az \ref{fig:erosito} ábrán látható. 
+A mikroelektródok jelének felerősítése egy TL082-műveleti erősítővel valósult meg a gyakorlatban.
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.8\textwidth]{img/erosito2.png}
+%\caption{Feszültségosztó módszer kapcsolási rajza.}
+%\label{fig:erosito}
+%\end{figure}
 
 \subsection{Pásztázó elektrokémiai mikroszkóp alkalmazása}
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{img/secm.png}
+\includegraphics[width=1\textwidth]{img/secm.png}
 \caption{Az 1-es képen a mérési elrendezés fotója látható (A) Léptetőmotorok, (B) indikátor elektród (C) referencia elektród, (D) kamera, (E) nagy bemeneti impedanciájú feszültségmérő. A 2-es képen a mérési elrendezés látható.}
 \label{fig:secm}
 \end{figure}
@@ -114,15 +114,9 @@ Az általam készített elektrokémiai képhez kb. 550 képkockát használtam f
 \subsection{PEKM}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.3\textwidth]{img/pasztazas.png}\includegraphics[width=0.4\textwidth]{img/pasztazas2.png}
-\caption{Az ábrán látható a mérésről készült videóból kivett képek 20 másodpercenként. Az optikai kép elkészítéséhez a pásztázási szakasznak megfelelő szélességű képet kivettem 1 pixel magasságban (kék vonal az ábrán).}
+\includegraphics[width=0.3\textwidth]{img/pasztazas.png}\includegraphics[width=0.3\textwidth]{img/pasztazas2.png}
+\caption{Az ábrán látható a mérésről készült videóból kivett képek 20 másodpercenként. Az optikai kép elkészítéséhez a pásztázási szakasznak megfelelő szélességű képet kivettem 1 pixel magasságban (kék vonal az ábrán). A képkockákból kivett részeket (kék vonal) egymásra helyeztem, majd ábrázoltam az idő függvényében. Az ábrán a zöld vonal mutatja az elektród útját a vizsgálat során. Egy vonal mentén zajlott ide-oda a pásztázás, azonban az elektród a tér-idő diagrammon egy cikk-cakk vonalat (zöld vonal) ír le, mivel az idő a mérés során -- természetesen -- halad.}
 \label{fig:pasztazas}
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{img/pasztazas2.png}
-\caption{A \ref{fig:pasztazas} ábrán bemutatott képből kivett részeket (kék vonal) egymásra helyeztem, majd ábrázoltam az idő függvényében. Az ábrán a zöld vonal mutatja az elektród útját a vizsgálat során. Egy vonal mentén zajlott a pásztázás, azonban az elektród egy cikk-cakk vonalat (zöld vonal) ír le a pásztázás során, mivel az idő folyamatosan változik a mérés alatt.}
-\label{fig:pasztazas2}
-\end{figure}
 A pontszerű mérés, valamint a PEKM mérés során kapott optikai- és eletrokémiai technika kombinálását az \emph{"Eredmények"} című fejezetben mutatom be.
