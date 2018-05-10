@@ -4,7 +4,7 @@
 \def\s{0.5}
 Munkám során próbáltam lépésről lépésre haladni, valamint az egyes lépések eredményeiről beszámolni. Fontosnak tartottam a korábban, mások által végzett munka főbb állomásainak reprodukálását, és azok begyakorlását. Csak akkor tértem át a következő, bonyolultabb vizsgálatra, mikor az azt megelőző, alapként szolgáló eredményeket sikeresen reprodukáltam. Az oszcilláló reakció vizsgálata előtt meggyőződtem róla, hogy a használt potenciometriás mérőcella elég gyorsan tudja-e követni a reakcióban fellépő potenciálváltozást. Ehhez egy \emph{,,flip--flop''} áramkört használtam, mely nagyon gyors potenciálugrás produkálására képes. A \ref{fig:square}. ábrán látható, hogy a mérőműszer követni tudja a gyors potenciál-változásokat. A használt mérőrendszerrel tehát vizsgálható a Belouszov-Zsabotyinszkij reakció.
 
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/square.jpg}
 \caption{A "flip-flop" 2 V-os, 200 ms-os négyszöghullámra mért potenciálváltozások.}
@@ -14,7 +14,7 @@ Munkám során próbáltam lépésről lépésre haladni, valamint az egyes lép
 \section{Platina elektród}
 A Belouszov-Zsabotyinszkij reakció tanulmányozását a gyárilag előállított makroméretű elektródokkal kezdtem a mérés begyakorolása valamint Kőrös Endre eredményeinek \cite{noyes1972oscillations} reprodukálása végett. Miután begyakoroltam a módszert, a saját készítésű elektróddal kezdtem el vizsgálni a már említett reakciót. A vizsgálatok során először kevertetve tanulmányoztam az oldatot, a kevertetést mágneses keverő segítségével valósítottam meg. A kevertetett reakció többszöri vizsgálata után kevertetést nem használva vizsgáltam a rendszert.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{img/platina_meres.png}
 \caption{A BZ-reakció tanulmányozása platina elektródokkal. (A) a kevert reakció vizsgálata makroméretű platina elektróddal, (B) kevert reakció platina mikroelektróddal, (C) keveretlen reakció vizsgálata platina mikroelektróddal. A potenciált az Ag/AgCl referencia elektródhoz viszonyítva mértem.}
@@ -26,7 +26,7 @@ A \ref{fig:platina_meres}.A ábrán látható a kevert rendszer vizsgálata makr
 A platina elektródok sikeres alkalmazása után szénszál elektródokkal folytattam a reakció vizsgálatát. Ezen mérések során a potenciálban hasonló változásokat véltem felfedezni, amit a \ref{fig:pontszerumeres}. ábrán a színes optikai kép előtt látható fekete vonallal jelzett elektrokémiai jel mutat. Mivel a redoxpotenciált a platina elektródhoz hasonlóan tudtam követni a szénszál elektródokkal, alkalmasnak bizonyultak a reakció tanulmányozásához. Későbbi munkám során már csak szénszál elektródokkal tanulmányoztam a rendszert, a platina elektród mérétének további csökkentése miatt (kisebb platina szál nem állt rendelkezésre).
 \subsection{Mérés egy pontban}
 A keveretlen reakció elektrokémiai tanulmányozását optikai módszer felhasználásával tovább bővítettem. Az előző pontban végzett vizsgálatok alapján és a későbbiekben előkerülő miniatürizálás érdekében szén mikroelektródokkal folyattam a vizsgálatokat. Az elektrokémiai jelet optikai képpel kombináltam,ennek eredményét  mutatom be ezen a pontban. Az optikai képet az \emph{"Optikai tér-idő kép szerkeztése"} című fejezetben leírt módszer alapján készítettem.
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/pontszerumeres.png}
 \caption{Pontszerű elektrokémiai és optikai mérés. A háttérben látható optikai kép, ahol a kék szín a ferroin indikátor oxidált-, míg a piros szín a redult formáját mutatja. Előtte fekete vonallal jelölve látható a mért elektrokémiai paraméter, a redoxpotenciál. Az optikai és az elektrokémiai méréseken megfigyelhető, hogy az oxidált hullámoknak megfelelő csúcsok egybeesnek.}
@@ -37,20 +37,20 @@ A \ref{fig:pontszerumeres}. ábrán látható az optikai képhez az elektródpot
 
 \subsection{Elektrokémiai pásztázás az oldatfázis felületén}
 Az elektrokémiai és optikai módszert tovább gondolva kezdtem meg a PEKM alkalmazását, amellyel elektrokémiai és optikai tér idő képet kaptam. Ezeknek a képeknek a kombinálását mutatom be ebben a pontban. A két módszer kombinálásának előnye, hogy térbeli kémiai információt kapunk az adott felületről.
-\begin{figure}[h!]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/oldat.png}
 \caption{A pásztázás során a mikroelektródok helyzete az oldathoz képest. Üvegszigeteléssel ellátott szénszál mikroelektród az oldatban (A) és az oldat felületén (B). 33 $\upmu$m (C) és 7 $\upmu$m (D) szénszál az oldat felületén. Csak a (D) esetben nem tapasztaltam konvektív zavarást a pásztázás közben.}
 \label{fig:oldat}
 \end{figure}
 A PEKM használatát a 33 $\upmu$m átmérőjű szén-mikroelektróddal próbáltam eleinte megvalósítani, de az elektród az oldatba merülve konvektív zavarást okozott a reakcióban(\ref{fig:oldat}.A ábra). Mivel a vizsgált reakció eleve kvázi--kétdimenziós és a vertikális grádiensek elhanyagolhatóak, a zavarás elkerülésének érdekében az elektródot csak egy pontban érintettem az oldathoz (\ref{fig:oldat}.B ábra). Sajnos még mindig konvektív zavarást véltem felfedezni a pásztázás során. Mivel az elektród egy pontban érintkezett a vizsgálandó oldattal, az elektród üveg szigetelését elhagyhattam (\ref{fig:oldat}.C ábra), azonban így sem jártam sikerrel. Az előzőekben leírt kíserletezések sikertelensége arra engedett következtetni, hogy ez a mérés a 33 $\upmu$m-es elektróddal nem fog sikerülni. Ezért magát a szénszál elektródot kellett finomítani, mivel nagy konvektív hatása van a pásztázás során (szemmel látható kavarodást okoz a reakcióelegyben), ami a "nagy" átmérőből fakad. Ennek kiküszöbölésére egy 7 $\upmu$m átmérőjű szén-mikroelektródot alkalmaztam (\ref{fig:oldat}.D ábra). Ezzel a szénszállal sikerült a zavarás mentes pásztázás, nem lépett fel szemmel látható konvekció. A fellépő zavarást a rendszer diffúzió által ellensúlyozni tudta. A kémiai hullámok a reakciótér faláig zavaratlan formában haladtak tovább. Ez a  vizsgálat látható a \ref{fig:secmkep}. ábrán.
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/secmkep.png}
 \caption{Az ábrán a fekete nagy számok a mérés időbeli változását mutatják 1-4 sorrendben. A kis fehér számok a hullámok sorszámát mutatja. A vízszintes zöld vonal a pásztázás vonalát mutatja, a függőleges kék vonal az elektród test helyét mutatja. A zöld és a kék vonal keresztezésénel található az elektródtest vége, ami 1 $\upmu$m-re merült a vizsgálandó BZ-reakcióelegybe. Szemmel látható, hogy az elektródtest nem okozott konvektív zavarást a pásztázás során.}
 \label{fig:secmkep}
 \end{figure}
-\begin{figure}
+\begin{figure}[!h]
 %% trim = top left bottom right
 \centering
 \includegraphics[width=0.8\textwidth]{img/spacetime2.eps}
@@ -61,7 +61,7 @@ Munkám fő eredményét a \ref{fig:spatiotemporal}. ábra mutatja. Látszik, ho
 
 A kapott adatok egy alkalmazását szeretném bemutatni példaként. Az ábráról, valamint a készülék által rögzített koordináta, idő, potenciál adatokból meghatározhatjuk például azon hullámok sebességét, melyekkel a pásztázás során többször is találkozott a mérőcsúcs. Ezeket az adatokat \ref{hullam}. táblázatban foglaltam össze, és számítottam ki a hullámok terjedési sebességét.
 
-\begin{table}[h] 
+\begin{table}[!h] 
 \centering
 \caption{\ref{fig:spatiotemporal}. ábráról leolvasható a mérés során kapott elektrokémiai jelek maximumai és a hozzájuk tartozó térkoordináta és idő adatok. Ezek segítségével a megjelölt kémiai hullámokról különböző statisztikai adatok számíthatóak.}
 \label{hullam}
